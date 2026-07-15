@@ -21,7 +21,7 @@ User query
 
 **Query understanding** — Few-shot intent–query pairs in the system prompt, with CoT rationale output to improve classification quality. LangGraph state management injected context dynamically based on the classified intent.
 
-**Retrieval** — 3 purpose-built indices (keyword, class, full-text) with text-embedding-3-large embeddings; HNSW parameters tuned for the workload.
+**Retrieval** — 3 purpose-built indices (keyword, class, full-text) with text-embedding-3-large embeddings; HNSW parameters and index configurations selected through comparative experiments.
 
 **Ranking** — Similarity alone couldn't satisfy the business need of "most important cases first." I designed and implemented business-priority ranking combining importance, recency, and acceptance-rate signals. (My owned area.)
 
